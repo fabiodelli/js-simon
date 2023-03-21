@@ -1,0 +1,12 @@
+/* *{
+    border: 1px solid;
+} */
+.cell{
+    width: 10%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 50%;
+}
