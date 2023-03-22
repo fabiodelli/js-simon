@@ -18,8 +18,10 @@ while (randomNumberAr.length < 5) {
        const cell = `<div class="cell">${randomNumber}</div>`
        containerEl.innerHTML += (cell)
     }
+    console.log(randomNumberAr)
   }
-return randomNumberAr}
+return randomNumberAr
+}
 
 
 //Creo funzione per far sparire i numeri allo scadere del tempo
@@ -42,19 +44,21 @@ function startGetNumber(){
    }
    console.log(numberArray)
  }
-return numberArray }
+return numberArray 
+}
 
 //Scorro i numeri inseriti e controllo se sono all' interno del array dei numeri random
 function control(){
    let correct=[]
-for (let i = 0; i < startGetNumber.length; i++) {
-   const currentNumber = startGetNumber[i];
-   const includes = generate.includes(currentNumber)
-   if(includes === true ){
-   correct.push(currentNumber)
-   console.log(correct)
+   for (let i = 0; i < startGetNumber().length; i++) {
+      const currentNumber = numberArray[i];
+      const includes = randomNumberAr.includes(currentNumber)
+      console.log(includes);
+      if(includes === true ){
+      correct.push(currentNumber)
+      }
+      console.log(correct)
    }
-  }
   if (correct.length == 5){
    console.log("hai vinto")
   } else {
