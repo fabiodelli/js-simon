@@ -50,7 +50,7 @@ return numberArray
 //Scorro i numeri inseriti e controllo se sono all' interno del array dei numeri random
 function control(){
    let correct=[]
-   for (let i = 0; i < startGetNumber().length; i++) {
+   for (let i = 0; i < numberArray.length; i++) {
       const currentNumber = numberArray[i];
       const includes = randomNumberAr.includes(currentNumber)
       console.log(includes);
@@ -59,11 +59,11 @@ function control(){
       }
       console.log(correct)
    }
-  if (correct.length == 5){
-   console.log("hai vinto")
-  } else {
-   console.log("hai perso")
-  }
+   if (correct.length == 5){
+      console.log("hai vinto")
+   } else {
+      console.log("hai perso")
+   }
 }
 
 
